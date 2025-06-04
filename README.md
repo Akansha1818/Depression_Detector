@@ -79,7 +79,9 @@ python main.py
 
 ### 🧪 API Endpoints
 ## POST /predict
+
 Predicts depression risk based on input student data.
+
 
 Input: JSON object with fields like age, gender, CGPA, sleep hours, etc.
 
@@ -92,10 +94,13 @@ Edit
   "prediction": "",
   "confidence": __
 }
+
 GET /student_trends?plot_type=<type>
 Returns a base64 image of trend plots.
 
+
 Supported plot_type values: age, gender, cgpa, social, sleep, etc.
+
 
 Output: Base64 string of a matplotlib/plotly image
 
