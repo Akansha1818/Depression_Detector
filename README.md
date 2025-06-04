@@ -37,26 +37,34 @@ A full-stack web application that predicts signs of student depression based on 
 
 ## 📂 Project Structure
 Depression_Detector/
+
 │
 ├── frontend/ # Next.js frontend
-│ ├── app/
+
+│ ├── app/ 
+
 │ ├── public/
+
 │ ├── .next/
+
 │ └── ...
 │
 ├── backend/ # Flask backend
+
 │ ├── main.py
+
 │ ├── model.pkl / model.h5
+
 │ └── ...
 
 ## 🔧 Getting Started (Local Development)
 
 ### Frontend
-cd frontend
-npm install
-npm run dev
+-cd frontend
+-npm install
+-npm run dev
 
 ### Backend
-cd backend
-pip install -r requirements.txt
-python main.py
+-cd backend
+-pip install -r requirements.txt
+-python main.py
