@@ -39,6 +39,7 @@ A full-stack web application that predicts signs of student depression based on 
 Depression_Detector/
 
 │
+
 ├── frontend/ # Next.js frontend
 
 │ ├── app/ 
@@ -49,6 +50,7 @@ Depression_Detector/
 
 │ └── ...
 │
+
 ├── backend/ # Flask backend
 
 │ ├── main.py
@@ -60,11 +62,62 @@ Depression_Detector/
 ## 🔧 Getting Started (Local Development)
 
 ### Frontend
--cd frontend
--npm install
--npm run dev
+cd frontend
+
+npm install
+
+npm run dev
 
 ### Backend
--cd backend
--pip install -r requirements.txt
--python main.py
+cd backend
+
+pip install -r requirements.txt
+
+python main.py
+
+
+
+###🧪 API Endpoints
+POST /predict
+Predicts depression risk based on input student data.
+
+Input: JSON object with fields like age, gender, CGPA, sleep hours, etc.
+
+Output:
+
+json
+Copy
+Edit
+{
+  "prediction": "",
+  "confidence": __
+}
+GET /student_trends?plot_type=<type>
+Returns a base64 image of trend plots.
+
+Supported plot_type values: age, gender, cgpa, social, sleep, etc.
+
+Output: Base64 string of a matplotlib/plotly image
+
+
+
+###🚀 Deployment on Render
+🔷 Frontend (Next.js)
+
+Build Command: npm install && npm run build
+
+Start Command: npm start
+
+Publish Directory: (not needed for web service)
+
+Live: https://student-scan.onrender.com
+
+
+###🔶 Backend (Flask)
+
+Start Command: python main.py
+
+Make sure to handle PORT environment variable from os.environ
+
+Live: https://studentscan.onrender.com
+
