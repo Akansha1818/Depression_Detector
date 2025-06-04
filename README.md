@@ -61,14 +61,14 @@ Depression_Detector/
 
 ## 🔧 Getting Started (Local Development)
 
-### Frontend
+## Frontend
 cd frontend
 
 npm install
 
 npm run dev
 
-### Backend
+## Backend
 cd backend
 
 pip install -r requirements.txt
@@ -77,8 +77,8 @@ python main.py
 
 
 
-###🧪 API Endpoints
-POST /predict
+### 🧪 API Endpoints
+## POST /predict
 Predicts depression risk based on input student data.
 
 Input: JSON object with fields like age, gender, CGPA, sleep hours, etc.
@@ -101,8 +101,8 @@ Output: Base64 string of a matplotlib/plotly image
 
 
 
-###🚀 Deployment on Render
-🔷 Frontend (Next.js)
+### 🚀 Deployment on Render
+## 🔷 Frontend (Next.js)
 
 Build Command: npm install && npm run build
 
@@ -113,7 +113,7 @@ Publish Directory: (not needed for web service)
 Live: https://student-scan.onrender.com
 
 
-###🔶 Backend (Flask)
+## 🔶 Backend (Flask)
 
 Start Command: python main.py
 
