@@ -1,4 +1,4 @@
-﻿pandas
+pandas
 numpy
 matplotlib
 seaborn
@@ -9,7 +9,3 @@ plotly
 joblib
 Flask
 requests
-jsonify
-CORS
-base64
-io
