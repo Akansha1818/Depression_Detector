@@ -42,7 +42,7 @@ export default function StudentTrendsPage() {
       const loadedImages = {};
       for (let section of graphSections) {
         try {
-          const res = await fetch(`http://localhost:5000/student_trends?plot_type=${section.endpoint}`);
+          const res = await fetch(`https://studentscan.onrender.com/student_trends?plot_type=${section.endpoint}`);
           const data = await res.json();
           loadedImages[section.title] = {
             image: data.image_data,
