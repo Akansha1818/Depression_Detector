@@ -50,7 +50,7 @@ export default function PredictPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/predict", formData);
+      const response = await axios.post("https://studentscan.onrender.com/predict", formData);
       setResult(response.data);
     } catch (error) {
       setResult("Prediction failed. Please try again later.");
